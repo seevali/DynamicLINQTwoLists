@@ -49,7 +49,7 @@ namespace DynamicLINQTwoLists
             //Build the Where clause (like first.Name == second.Name ...)
             foreach (var q in input.Split(','))
             {
-                querry += (querry.Length >0 ? " && " : "") + "first." + q + " == " + "second." + q;
+                querry += (querry.Length > 0 ? " && " : "") + "first." + q + " == " + "second." + q;
             }
 
             //Get the result using System.Linq.Dynamic.Core
